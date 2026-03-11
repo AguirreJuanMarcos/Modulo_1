@@ -2,5 +2,5 @@
 # Módulo 1
 |NOMBRES|APELLIDOS|LINK|WSP|
 |-------|---------|-----|----|
-|Juan|Aguirre|jfsdkjsf|121342|
+|Juan Marcos|Aguirre Simionato|<https://github.com/AguirreJuanMarcos>|123456|
 
