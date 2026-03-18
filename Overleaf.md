@@ -117,3 +117,192 @@ We hope you find Overleaf useful, and do take a look at our \href{https://www.ov
 \bibliography{sample}
 
 \end{document}
+
+
+
+
+CV
+
+
+
+% a mashup of hipstercv, friggeri and twenty cv
+% https://www.latextemplates.com/template/twenty-seconds-resumecv
+% https://www.latextemplates.com/template/friggeri-resume-cv
+
+\documentclass[lighthipster]{simplehipstercv}
+% available options are: darkhipster, lighthipster, pastel, allblack, grey, verylight, withoutsidebar
+% withoutsidebar
+\usepackage[utf8]{inputenc}
+\usepackage[default]{raleway}
+\usepackage[margin=1cm, a4paper]{geometry}
+
+
+%------------------------------------------------------------------ Variablen
+
+\newlength{\rightcolwidth}
+\newlength{\leftcolwidth}
+\setlength{\leftcolwidth}{0.23\textwidth}
+\setlength{\rightcolwidth}{0.75\textwidth}
+
+%------------------------------------------------------------------
+\title{New Simple CV}
+\author{\LaTeX{} Ninja}
+\date{June 2019}
+
+\pagestyle{empty}
+\begin{document}
+
+
+\thispagestyle{empty}
+%-------------------------------------------------------------
+
+\section*{Start}
+
+\simpleheader{headercolour}{Juan Marcos}{Aguirre Simionato}{Estudiante Ingeniería}{white}
+
+
+
+%------------------------------------------------
+
+% this has to be here so the paracols starts..
+\subsection*{}
+\vspace{4em}
+
+\setlength{\columnsep}{1.5cm}
+\columnratio{0.23}[0.75]
+\begin{paracol}{2}
+\hbadness5000
+%\backgroundcolor{c[1]}[rgb]{1,1,0.8} % cream yellow for column-1 %\backgroundcolor{g}[rgb]{0.8,1,1} % \backgroundcolor{l}[rgb]{0,0,0.7} % dark blue for left margin
+
+\paracolbackgroundoptions
+
+% 0.9,0.9,0.9 -- 0.8,0.8,0.8
+
+
+\footnotesize
+{\setasidefontcolour
+\flushright
+\begin{center}
+    \roundpic{jack.png}
+\end{center}
+
+\bg{cvgreen}{white}{Sobre mi}\\[0.5em]
+
+{\footnotesize
+ Estudiante de Ingeniería Industrial con interés en optimización de procesos, análisis de datos y mejora continua. Me enfoco en entender cómo funcionan los sistemas productivos para identificar ineficiencias y proponer soluciones prácticas. Manejo herramientas analíticas y tengo una mentalidad orientada a resultados. Busco desarrollarme en entornos donde pueda aplicar conocimientos técnicos y generar impacto real.}
+\bigskip
+
+\bg{cvgreen}{white}{personal} \\[0.5em]
+Juan Marcos Aguirre
+
+Nacionalidad: Argentino 
+
+2002
+
+\bigskip
+
+
+
+
+\bigskip
+
+\bg{cvgreen}{white}{Interests}\\[0.5em]
+
+\lorem
+\bigskip
+
+\bg{cvgreen}{white}{Interests}\\[0.5em]
+
+\texttt{Gestión} ~/~ \texttt{Proyectos} ~/~ \texttt{Rendimiento}
+
+
+\vspace{4em}
+
+\infobubble{\faAt}{cvgreen}{white}{juanmaaguirre125}
+\infobubble{\faTwitter}{cvgreen}{white}{@juanmaaguirre12}
+\infobubble{\faFacebook}{cvgreen}{white}{Juan Marcos Aguirre}
+\infobubble{\faGithub}{cvgreen}{white}{AguirreJuanMarcos}
+
+\phantom{turn the page}
+
+\phantom{turn the page}
+}
+%-----------------------------------------------------------
+\switchcolumn
+
+\small
+\section*{Resumen}
+
+\begin{tabular}{r| p{0.5\textwidth} c}
+    \cvevent{2020--2026}{Estudiante de Ingienería}{Estudiante}{UNCuyo \color{cvred}}{Estudiante de Ingienería Industrial.}{disney.png} \\
+    \cvevent{--2019}{Bachillerato en Economíal}{Estudiante}{I.P.V.B \color{cvred}}{\lorem\lorem}{medal.jpeg}
+\end{tabular}
+\vspace{3em}
+
+\begin{minipage}[t]{0.35\textwidth}
+\section*{Grados}
+\begin{tabular}{r p{0.6\textwidth} c}
+    \cvdegree{2026}{Estudiante de Ingeniería}{Regular}{UNCuyo \color{headerblue}}{}{disney.png} \\
+    \cvdegree{2020}{Bachillearto Economía}{Certificado}{Mendoza \color{headerblue}}{}{medal.jpeg} \\
+    \cvdegree{--}{Cursos}{Certificados}{Mendoza \color{headerblue}}{}{medal.jpeg}
+\end{tabular}
+\end{minipage}\hfill
+
+
+
+\section*{Cursos}
+\begin{tabular}{r| p{0.5\textwidth} c}
+    \cvevent{2024}{Curso de electricidad y técnico en Aires Acondicionados}{Certificado}{Mendoza \color{cvred}}{Finally got the goddamn ship back.}{} \\
+    \cvevent{2025}{Curso Workover}{Certificado}{Tortuga \color{cvred}}{  \lorem}{medal.jpeg} \\
+\end{tabular}
+\vspace{3em}
+
+\begin{minipage}[t]{0.3\textwidth}
+\section*{Certificados}
+\begin{tabular}{>{\footnotesize\bfseries}r >{\footnotesize}p{0.55\textwidth}}
+    2026 & Certificados de Cursos mencionados anteriormente \\
+
+\end{tabular}
+\bigskip
+
+\section*{Idiomas}
+\begin{tabular}{l | ll}
+\textbf{Español} & C2 & {\phantom{x}\footnotesize idioma nativo} \\
+
+\textbf{Inglés} & C2 & \pictofraction{\faCircle}{cvgreen}{1}{black!30}{3}{\tiny} \\
+
+\end{tabular}
+\bigskip
+
+\end{minipage}\hfill
+\begin{minipage}[t]{0.3\textwidth}
+
+
+\bigskip
+
+
+
+\end{minipage}
+
+
+
+
+
+
+\vfill{} % Whitespace before final footer
+
+%----------------------------------------------------------------------------------------
+%	FINAL FOOTER
+%----------------------------------------------------------------------------------------
+\setlength{\parindent}{0pt}
+\begin{minipage}[t]{\rightcolwidth}
+\begin{center}\fontfamily{\sfdefault}\selectfont \color{black!70}
+{\small Juan Aguirre \icon{\faEnvelopeO}{cvgreen}{} juanmaaguirre125 \icon{\faMapMarker}{cvgreen}{} Mendoza Argentina \icon{\faPhone}{cvgreen}{} 2616932970 \newline\icon{\faAt}{cvgreen}{} \protect\url{juanmaaguirre125@gmail.com}
+}
+\end{center}
+\end{minipage}
+
+\end{paracol}
+
+\end{document}
+
