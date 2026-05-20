@@ -7,3 +7,6 @@
 
 # Módulo 2
 <https://github.com/AguirreJuanMarcos/Modulo_2>
+
+# Módulo 3
+<https://github.com/AguirreJuanMarcos/Modulo_3>
